@@ -1,1 +1,1 @@
-# Spotify-control-via-simulated-rotary-events
+# Deezer-control-via-simulated-rotary-events
