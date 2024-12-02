@@ -1,0 +1,45 @@
+cc_defaults{
+    name: "com.luxoft.hello-defaults",
+    shared_libs: [
+        "com.luxoft.hello-V1-ndk",
+        "libbase",
+        "libbinder_ndk",
+    ],
+    vendor: true,
+}
+
+cc_library_static {
+    name: "com.luxoft.hello-lib",
+    defaults: ["com.luxoft.hello-defaults"],
+    srcs: [
+        "src/*",
+    ],
+    export_include_dirs: [
+        "src/include",
+    ],
+}
+
+cc_binary {
+    name: "hello-service",
+    defaults: ["com.luxoft.hello-defaults"],
+    relative_install_path: "hw",
+    init_rc: ["init/hello-default.rc"],
+    vintf_fragments: ["manifest/hello_device_manifest.xml"],
+    vendor: true,
+    srcs: [
+        "src/hello_service_main.cpp",
+    ],
+    static_libs: [
+        "com.luxoft.hello-lib",
+        ],
+    shared_libs: [
+        "libbase",
+        "libbinder",
+        "libcamera_metadata",
+        "libcutils",
+        "libgui",
+        "liblog",
+        "libnativewindow",
+        "libutils",
+    ]
+}

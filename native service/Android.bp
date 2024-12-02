@@ -1,0 +1,25 @@
+cc_binary {
+    name: "rotary",
+    srcs: [
+        "main.cpp",
+        "GPIO.cpp",
+        "rotary.cpp",
+    ],
+    include_dirs: [
+        ".",
+    ],
+    shared_libs: [
+        "liblog",
+        "libc",
+    ],
+    cflags: [
+        "-Wall",
+        "-Wextra",
+    ],
+    cppflags: [
+        "-std=c++17",
+    ],
+    vendor: false,
+    init_rc: ["rotary.rc"],
+
+}

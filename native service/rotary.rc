@@ -1,0 +1,14 @@
+service rotary /system/bin/rotary  
+    class late_start
+    user root
+    group root
+    seclabel u:object_r:rotary_exec:s0
+
+on boot
+    start rotary
+
+
+
+
+
+ 

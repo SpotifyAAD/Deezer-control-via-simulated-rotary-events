@@ -1,0 +1,6 @@
+
+prebuilt_etc {
+    name: "helloapp-permissions-recop",
+    src: "helloapp-permissions-recop.xml",
+    filename_from_src: true,
+}

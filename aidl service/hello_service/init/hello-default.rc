@@ -1,0 +1,17 @@
+service hello-service /vendor/bin/hw/hello-service
+    interface aidl com.luxoft.hello.IHello/default
+    class main
+    user root
+    group root
+    shutdown critical
+    oneshot
+
+on boot
+    ./vendor/bin/hw/hello-service
+    
+
+
+
+
+
+ 

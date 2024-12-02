@@ -1,0 +1,7 @@
+<permissions>
+    
+    <helloapp-permissions package="com.luxoft.hello">
+        <permission name="android.permission.INTERNET"/>
+    </helloapp-permissions>
+    
+</permissions>
