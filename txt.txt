@@ -1,0 +1,610 @@
+ Error calling dismiss
+11-23 18:43:43.815  2500  3962 W VolumeController: android.os.DeadObjectException
+11-23 18:43:43.815  2500  3962 W VolumeController: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.815  2500  3962 W VolumeController: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.815  2500  3962 W VolumeController: 	at android.media.IVolumeController$Stub$Proxy.dismiss(IVolumeController.java:277)
+11-23 18:43:43.815  2500  3962 W VolumeController: 	at com.android.server.audio.AudioService$VolumeController.postDismiss(AudioService.java:12058)
+11-23 18:43:43.815  2500  3962 W VolumeController: 	at com.android.server.audio.AudioService.setVolumeController(AudioService.java:11845)
+11-23 18:43:43.815  2500  3962 W VolumeController: 	at com.android.server.audio.AudioService$7.binderDied(AudioService.java:11854)
+11-23 18:43:43.815  2500  3962 W VolumeController: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.815  2500  3962 W VolumeController: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.816  2500  2642 D ConnectivityService: releasing NetworkRequest [ REQUEST id=199, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10103 RequestorUid: 10103 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ] (release request)
+11-23 18:43:43.816   772   883 D BufferPoolAccessor2.0: bufferpool2 0xb40000718a89af08 : 0(0 size) total buffers - 0(0 size) used buffers - 14/16 (recycle/alloc) - 2/15 (fetch/transfer)
+11-23 18:43:43.818   772   883 D BufferPoolAccessor2.0: Destruction - bufferpool2 0xb40000718a89af08 cached: 0/0M, 0/0% in use; allocs: 16, 88% recycled; transfers: 15, 87% unfetched
+11-23 18:43:43.820  2500  4157 D DisplayAreaOrganizerController: Organizer died before sending onDisplayAreaVanished
+11-23 18:43:43.820  2500  5075 I WindowManager: WIN DEATH: Window{2afc440 u0 HeadsUpNotification}
+11-23 18:43:43.821  2500  5075 W InputManager-JNI: Input channel object '2afc440 HeadsUpNotification (client)' was disposed without first being removed with the input manager!
+11-23 18:43:43.822  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.822  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.823  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.823  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getStatusControlTarget(InsetsPolicy.java:504)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:117)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.823  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.823  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.823  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.824  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.824  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getNavControlTarget(InsetsPolicy.java:564)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:124)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.824  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.825  2500  5075 W ActivityManager: pid 2500 system sent binder code 2 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.825  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.826  2500  5075 W WindowManager: Failed to deliver inset state change
+11-23 18:43:43.826  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.insetsChanged(IDisplayWindowInsetsController.java:222)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.notifyInsetsChanged(DisplayContent.java:7077)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.notifyInsetsChanged(DisplayContent.java:2160)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsStateController.notifyInsetsChanged(InsetsStateController.java:395)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsStateController.onPostLayout(InsetsStateController.java:176)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5093)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.826  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.799     0     0 I binder  : 3251:3251 cannot find target node
+11-23 18:43:43.820     0     0 I binder  : 3251:3251 transaction async to 0:0 failed 333131/29189/-22, size 84-0 line 3273
+11-23 18:43:43.828  2500  5075 W ActivityTaskManager: Unable to send transaction to client proc com.android.systemui: no app thread
+11-23 18:43:43.829  2500  5075 I WindowManager: WIN DEATH: Window{e069c27 u0 SystemUIOverlayWindow}
+11-23 18:43:43.831  2500  5075 W InputManager-JNI: Input channel object 'e069c27 SystemUIOverlayWindow (client)' was disposed without first being removed with the input manager!
+11-23 18:43:43.832  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.833  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.833  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.833  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getStatusControlTarget(InsetsPolicy.java:504)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:117)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.833  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.834  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.834  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.835  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.835  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getNavControlTarget(InsetsPolicy.java:564)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:124)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.835  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.836  2500  5075 I WindowManager: WIN DEATH: Window{9c9120d u0 BottomCarSystemBar}
+11-23 18:43:43.836  3251  3251 E IPCThreadState: Binder transaction failure: 333131/29189/-22
+11-23 18:43:43.837  2500  5075 W InputManager-JNI: Input channel object '9c9120d BottomCarSystemBar (client)' was disposed without first being removed with the input manager!
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: TaskView's host has already died
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: android.os.DeadObjectException
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.ICarTaskViewHost$Stub$Proxy.release(ICarTaskViewHost.java:293)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.RemoteCarTaskView.release(RemoteCarTaskView.java:289)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.ControlledRemoteCarTaskView.release(ControlledRemoteCarTaskView.java:348)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.CarTaskViewController.releaseTaskViews(CarTaskViewController.java:242)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$ActivityHolder.onCarSystemUIDisconnected(CarTaskViewControllerSupervisor.java:271)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$ActivityHolder.-$$Nest$monCarSystemUIDisconnected(Unknown Source:0)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor.onSystemUIProxyDisconnected(CarTaskViewControllerSupervisor.java:202)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor.-$$Nest$monSystemUIProxyDisconnected(Unknown Source:0)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$1.lambda$binderDied$0(CarTaskViewControllerSupervisor.java:62)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$1.$r8$lambda$WpCwr1u1KTsjxGxR6TIHRlkDi_Y(Unknown Source:0)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$1$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.os.Handler.handleCallback(Handler.java:959)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.os.Looper.loop(Looper.java:317)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at android.app.ActivityThread.main(ActivityThread.java:8592)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at java.lang.reflect.Method.invoke(Native Method)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-23 18:43:43.838  3251  3251 W RemoteCarTaskView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:878)
+11-23 18:43:43.838  3251  3251 W CarTaskViewController: This taskView has already been removed
+11-23 18:43:43.844     0     0 I binder  : 5075:2500 cannot find target node
+11-23 18:43:43.852  2500  2530 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_10103/pid_5705
+11-23 18:43:43.854  2432  2432 I Zygote  : Process 5705 exited due to signal 9 (Killed)
+11-23 18:43:43.855     0     0 I binder  : 2500:5075 transaction async to 0:0 failed 333197/29189/-22, size 60-0 line 3273
+11-23 18:43:43.861  2500  5075 E IPCThreadState: Binder transaction failure: 333197/29189/-22
+11-23 18:43:43.861  2500  5075 W ActivityManager: pid 2500 system sent binder code 14 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.861  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.862  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.862  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.863  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.863  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getStatusControlTarget(InsetsPolicy.java:504)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:117)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.863  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.863  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.863  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.864  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.864  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getNavControlTarget(InsetsPolicy.java:564)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:124)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.864  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.865  2500  5075 W ActivityManager: pid 2500 system sent binder code 2 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.865  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.865  2500  5075 W WindowManager: Failed to deliver inset state change
+11-23 18:43:43.865  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.insetsChanged(IDisplayWindowInsetsController.java:222)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.notifyInsetsChanged(DisplayContent.java:7077)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.notifyInsetsChanged(DisplayContent.java:2160)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsStateController.notifyInsetsChanged(InsetsStateController.java:395)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsStateController.onPostLayout(InsetsStateController.java:176)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5093)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.865  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.873  2500  5075 I ActivityTaskManager: Config changes=20000400 {1.0 ?mcc0mnc [en_US] ldltr sw720dp w1280dp h644dp 240dpi lrg long land car finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1920, 1080) mMaxBounds=Rect(0, 0 - 1920, 1080) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.2788 fontWeightAdjustment=0}
+11-23 18:43:43.878  2732  4437 W CAR.HAL : Unsubscribe to a static property: HVAC_FAN_DIRECTION_AVAILABLE(0x15410511), do nothing
+11-23 18:43:43.891  2500  5075 W ActivityTaskManager: Current config: {1.0 ?mcc0mnc [en_US] ldltr sw720dp w1280dp h548dp 240dpi lrg long land car finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1920, 936) mMaxBounds=Rect(0, 0 - 1920, 1080) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.2788 fontWeightAdjustment=0} unchanged for IME proc com.android.inputmethod.latin
+11-23 18:43:43.901  2500  5075 I WindowManager: Override config changes=20000400 {1.0 ?mcc0mnc [en_US] ldltr sw720dp w1280dp h644dp 240dpi lrg long land car finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1920, 1080) mMaxBounds=Rect(0, 0 - 1920, 1080) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.2788 fontWeightAdjustment=0} for displayId=0
+11-23 18:43:43.901  2500  5075 W ActivityTaskManager: Unable to send transaction to client proc com.android.systemui: no app thread
+11-23 18:43:43.901  2500  2500 W WindowTokenClientController: Can't find attached WindowTokenClient for android.window.WindowTokenClient@8be2b00
+11-23 18:43:43.902  2500  5075 V ActivityTaskManager: Sending to IME proc com.android.inputmethod.latin new config {1.0 ?mcc0mnc [en_US] ldltr sw720dp w1280dp h644dp 240dpi lrg long land car finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1920, 1080) mMaxBounds=Rect(0, 0 - 1920, 1080) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.2848 fontWeightAdjustment=0}
+11-23 18:43:43.906  2500  5075 W ActivityManager: pid 2500 system sent binder code 3 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.906  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.922  2500  5075 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+11-23 18:43:43.926  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.926  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.926  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.926  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getStatusControlTarget(InsetsPolicy.java:504)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:117)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.continueLayout(WindowSurfacePlacer.java:97)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.ActivityTaskManagerService.continueWindowLayout(ActivityTaskManagerService.java:4801)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.updateDisplayOverrideConfigurationLocked(DisplayContent.java:6362)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.updateDisplayOverrideConfigurationLocked(DisplayContent.java:6325)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.sendNewConfiguration(DisplayContent.java:1669)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2490)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.926  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.926  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.926  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.927  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.927  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getNavControlTarget(InsetsPolicy.java:564)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:124)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.continueLayout(WindowSurfacePlacer.java:97)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.ActivityTaskManagerService.continueWindowLayout(ActivityTaskManagerService.java:4801)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.updateDisplayOverrideConfigurationLocked(DisplayContent.java:6362)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.updateDisplayOverrideConfigurationLocked(DisplayContent.java:6325)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.sendNewConfiguration(DisplayContent.java:1669)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2490)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.927  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.933  2500  5075 I WindowManager: WIN DEATH: Window{ca0700c u0 TopCarSystemBar}
+11-23 18:43:43.934  2500  5075 W InputManager-JNI: Input channel object 'ca0700c TopCarSystemBar (client)' was disposed without first being removed with the input manager!
+11-23 18:43:43.936  2732  4437 V CAR.PropertyHalServiceConfigs: no custom vendor read permission for: FUELTANK, default to PERMISSION_VENDOR_EXTENSION
+11-23 18:43:43.940     0     0 I binder  : 5075:2500 cannot find target node
+11-23 18:43:43.946     0     0 I binder  : 2500:5075 transaction async to 0:0 failed 333380/29189/-22, size 60-0 line 3273
+11-23 18:43:43.951  2500  5075 E IPCThreadState: Binder transaction failure: 333380/29189/-22
+11-23 18:43:43.951  2500  5075 W ActivityManager: pid 2500 system sent binder code 14 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.951  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.953  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.953  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.954  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.954  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getStatusControlTarget(InsetsPolicy.java:504)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:117)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.954  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.954  2500  5075 W ActivityManager: pid 2500 system sent binder code 1 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.955  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.955  2500  5075 W WindowManager: Failed to deliver package in top focused window change
+11-23 18:43:43.955  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.topFocusedWindowChanged(IDisplayWindowInsetsController.java:209)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.topFocusedWindowChanged(DisplayContent.java:7069)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.getNavControlTarget(InsetsPolicy.java:564)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateBarControlTarget(InsetsPolicy.java:124)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsPolicy.updateSystemBars(InsetsPolicy.java:608)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarsLw(DisplayPolicy.java:2439)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.updateSystemBarAttributes(DisplayPolicy.java:2318)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw(DisplayPolicy.java:1691)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5089)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.955  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 18:43:43.956  2500  5075 W ActivityManager: pid 2500 system sent binder code 2 with flags 1 to frozen apps and got error -32
+11-23 18:43:43.956  2500  5075 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 18:43:43.956  2500  5075 W WindowManager: Failed to deliver inset state change
+11-23 18:43:43.956  2500  5075 W WindowManager: android.os.DeadObjectException
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.insetsChanged(IDisplayWindowInsetsController.java:222)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.notifyInsetsChanged(DisplayContent.java:7077)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.notifyInsetsChanged(DisplayContent.java:2160)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsStateController.notifyInsetsChanged(InsetsStateController.java:395)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.InsetsStateController.onPostLayout(InsetsStateController.java:176)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.DisplayContent.applySurfaceChangesTransaction(DisplayContent.java:5093)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction(RootWindowContainer.java:978)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:777)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:743)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.WindowManagerService.postWindowRemoveCleanupLocked(WindowManagerService.java:2048)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeImmediately(WindowState.java:2354)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.WindowState.removeIfPossible(WindowState.java:2480)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at com.android.server.wm.Session.binderDied(Session.java:230)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 18:43:43.956  2500  5075 W WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+
+
+
+///////////////////////////////
+
+11-23 19:15:47.876  2177  2687 W AudioService.RecordingActivityMonitor: client died
+11-23 19:15:47.884  2177  2398 W AS.AudioService: Current remote volume controller died, unregistering
+11-23 19:15:47.886  2177  2398 W VolumeController: 	at com.android.server.audio.AudioService$VolumeController.postDismiss(AudioService.java:12058)
+11-23 19:15:47.886  2177  2398 W VolumeController: 	at com.android.server.audio.AudioService.setVolumeController(AudioService.java:11845)
+11-23 19:15:47.886  2177  2398 W VolumeController: 	at com.android.server.audio.AudioService$7.binderDied(AudioService.java:11854)
+
+disconnectFromLauncherService bound?: false currentProxy: null disconnectReason: startConnectionToCurrentUser
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: java.lang.Throwable
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.recents.OverviewProxyService.disconnectFromLauncherService(OverviewProxyService.java:869)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.recents.OverviewProxyService.internalConnectToCurrentUser(OverviewProxyService.java:806)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.recents.OverviewProxyService.startConnectionToCurrentUser(OverviewProxyService.java:794)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.recents.OverviewProxyService.updateEnabledAndBinding(OverviewProxyService.java:706)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.recents.OverviewProxyService.<init>(OverviewProxyService.java:693)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl$SwitchingProvider.get1(DaggerCarGlobalRootComponent.java:9397)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl$SwitchingProvider.get(DaggerCarGlobalRootComponent.java:12004)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at dagger.internal.DelegateFactory.get(DelegateFactory.java:36)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl$SwitchingProvider.get5(DaggerCarGlobalRootComponent.java:11005)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl$SwitchingProvider.get(DaggerCarGlobalRootComponent.java:12008)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.dagger.ContextComponentResolver.resolve(ContextComponentResolver.java:87)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.dagger.ContextComponentResolver.resolveRecents(ContextComponentResolver.java:72)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.recents.RecentsModule.provideRecentsImpl(RecentsModule.java:71)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.recents.RecentsModule_ProvideRecentsImplFactory.provideRecentsImpl(RecentsModule_ProvideRecentsImplFactory.java:49)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl.recentsImplementation(DaggerCarGlobalRootComponent.java:7367)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl.-$$Nest$mrecentsImplementation(DaggerCarGlobalRootComponent.java:0)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl$SwitchingProvider.get6(DaggerCarGlobalRootComponent.java:11210)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl$SwitchingProvider.get(DaggerCarGlobalRootComponent.java:12009)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.SystemUIApplication.startStartable(SystemUIApplication.java:423)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.SystemUIApplication.lambda$startServicesIfNeeded$0(SystemUIApplication.java:308)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.SystemUIApplication.$r8$lambda$sGiK2-9UovZrcCsIc_DAH_UDKow(SystemUIApplication.java:0)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.SystemUIApplication$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.SystemUIApplication.timeInitialization(SystemUIApplication.java:383)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.SystemUIApplication.startServicesIfNeeded(SystemUIApplication.java:306)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.SystemUIApplication.startSystemUserServicesIfNeeded(SystemUIApplication.java:218)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.systemui.SystemUIService.onCreate(SystemUIService.java:80)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4912)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2407)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at android.os.Looper.loop(Looper.java:317)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at android.app.ActivityThread.main(ActivityThread.java:8592)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at java.lang.reflect.Method.invoke(Native Method)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-23 19:17:22.364  5882  5882 D OverviewProxyService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:878)
+
+
+ Shutting down VM
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: FATAL EXCEPTION: main
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: Process: com.android.systemui, PID: 5796
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at java.util.Objects.checkIndex(Objects.java:359)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at java.util.ArrayList.get(ArrayList.java:434)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at com.android.systemui.car.volume.CarVolumeDialogImpl.clearAllAndSetupDefaultCarVolumeLineItem(CarVolumeDialogImpl.java:460)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at com.android.systemui.car.volume.CarVolumeDialogImpl.showH(CarVolumeDialogImpl.java:452)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at com.android.systemui.car.volume.CarVolumeDialogImpl.-$$Nest$mshowH(CarVolumeDialogImpl.java:0)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at com.android.systemui.car.volume.CarVolumeDialogImpl$H.handleMessage(CarVolumeDialogImpl.java:669)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:317)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8592)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-23 19:17:20.106  5796  5796 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:878)
+
+
+
+Binder transaction failure: 425266/29189/-22
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: TaskView's host has already died
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: android.os.DeadObjectException
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.ICarTaskViewHost$Stub$Proxy.release(ICarTaskViewHost.java:293)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.RemoteCarTaskView.release(RemoteCarTaskView.java:289)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.ControlledRemoteCarTaskView.release(ControlledRemoteCarTaskView.java:348)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.CarTaskViewController.releaseTaskViews(CarTaskViewController.java:242)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$ActivityHolder.onCarSystemUIDisconnected(CarTaskViewControllerSupervisor.java:271)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$ActivityHolder.-$$Nest$monCarSystemUIDisconnected(Unknown Source:0)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor.onSystemUIProxyDisconnected(CarTaskViewControllerSupervisor.java:202)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor.-$$Nest$monSystemUIProxyDisconnected(Unknown Source:0)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$1.lambda$binderDied$0(CarTaskViewControllerSupervisor.java:62)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$1.$r8$lambda$WpCwr1u1KTsjxGxR6TIHRlkDi_Y(Unknown Source:0)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.car.app.CarTaskViewControllerSupervisor$1$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.os.Handler.handleCallback(Handler.java:959)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.os.Looper.loop(Looper.java:317)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at android.app.ActivityThread.main(ActivityThread.java:8592)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at java.lang.reflect.Method.invoke(Native Method)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-23 19:17:20.187  3219  3219 W RemoteCarTaskView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:878)
+
+
+
+ Error calling dismiss
+11-23 19:17:20.212  2177  4916 W VolumeController: android.os.DeadObjectException
+11-23 19:17:20.212  2177  4916 W VolumeController: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 19:17:20.212  2177  4916 W VolumeController: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 19:17:20.212  2177  4916 W VolumeController: 	at android.media.IVolumeController$Stub$Proxy.dismiss(IVolumeController.java:277)
+11-23 19:17:20.212  2177  4916 W VolumeController: 	at com.android.server.audio.AudioService$VolumeController.postDismiss(AudioService.java:12058)
+11-23 19:17:20.212  2177  4916 W VolumeController: 	at com.android.server.audio.AudioService.setVolumeController(AudioService.java:11845)
+11-23 19:17:20.212  2177  4916 W VolumeController: 	at com.android.server.audio.AudioService$7.binderDied(AudioService.java:11854)
+11-23 19:17:20.212  2177  4916 W VolumeController: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 19:17:20.212  2177  4916 W VolumeController: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 19:17:20.214  2422  5524 I CarPowerManagementService: binderDied android.os.BinderProxy@1c2d6c4
+11-23 19:17:20.215  2177  4919 W WindowManager: Unable to find process with pid=5796 uid=10103
+11-23 19:17:20.215  2177  3835 D ConnectivityService: ConnectivityDiagnosticsCallback IBinder died.
+11-23 19:17:20.219  2177  2332 D ConnectivityService: releasing NetworkRequest [ REQUEST id=220, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10103 RequestorUid: 10103 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ] (release request)
+11-23 19:17:20.220  2177  2332 D ConnectivityService: releasing NetworkRequest [ REQUEST id=222, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10103 RequestorUid: 10103 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ] (release request)
+11-23 19:17:20.221  2177  4919 W ActivityManager: pid 2177 system sent binder code 2 with flags 1 to frozen apps and got error -32
+11-23 19:17:20.221  2177  4919 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+11-23 19:17:20.222  2177  2332 D ConnectivityService: releasing NetworkRequest [ REQUEST id=227, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10103 RequestorUid: 10103 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ] (release request)
+11-23 19:17:20.222  2177  4919 E WindowManager: Failed to notify cancel
+11-23 19:17:20.222  2177  4919 E WindowManager: android.os.DeadObjectException
+11-23 19:17:20.222  2177  4919 E WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 19:17:20.222  2177  4919 E WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 19:17:20.222  2177  4919 E WindowManager: 	at android.view.IRemoteAnimationRunner$Stub$Proxy.onAnimationCancelled(IRemoteAnimationRunner.java:182)
+11-23 19:17:20.222  2177  4919 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.invokeAnimationCancelled(RemoteAnimationController.java:363)
+11-23 19:17:20.222  2177  4919 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.cancelAnimation(RemoteAnimationController.java:229)
+11-23 19:17:20.222  2177  4919 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.binderDied(RemoteAnimationController.java:408)
+11-23 19:17:20.222  2177  4919 E WindowManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:320)
+11-23 19:17:20.222  2177  4919 E WindowManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:726)
+11-23 19:17:20.226  5882  5882 I Zygote  : seccomp disabled by setenforce 0
+
+
+Failed to deliver inset control state change
+11-23 19:17:20.236  2177  2199 W WindowManager: android.os.DeadObjectException
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.view.IDisplayWindowInsetsController$Stub$Proxy.insetsControlChanged(IDisplayWindowInsetsController.java:236)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.DisplayContent$RemoteInsetsControlTarget.notifyInsetsControlChanged(DisplayContent.java:7088)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.InsetsStateController.lambda$notifyPendingInsetsControlChanged$3(InsetsStateController.java:376)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.InsetsStateController.$r8$lambda$MnP7XA1MDcyrUwoj0hcoT5hTO8E(InsetsStateController.java:0)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.InsetsStateController$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.WindowAnimator.executeAfterPrepareSurfacesRunnables(WindowAnimator.java:314)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.WindowAnimator.animate(WindowAnimator.java:207)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.WindowAnimator.lambda$new$1(WindowAnimator.java:99)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.WindowAnimator.$r8$lambda$AS_wbK9i-bc6ocCFop7s9PnXP80(WindowAnimator.java:0)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.wm.WindowAnimator$$ExternalSyntheticLambda1.doFrame(R8$$SyntheticClass:0)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1404)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.view.Choreographer.doFrame(Choreographer.java:941)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.os.Handler.handleCallback(Handler.java:959)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.os.Looper.loop(Looper.java:317)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+11-23 19:17:20.236  2177  2199 W WindowManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+11-23 19:17:20.240  5882  5882 I ndroid.systemui: Using CollectorTypeCMC GC.
+
+
+ No injector for class: class com.android.systemui.keyguard.CustomizationProvider
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: java.lang.NoSuchMethodException: com.android.systemui.DaggerCarGlobalRootComponent$CarSysUIComponentImpl.inject [class com.android.systemui.keyguard.CustomizationProvider]
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at java.lang.Class.getMethod(Class.java:2950)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at java.lang.Class.getMethod(Class.java:2450)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at com.android.systemui.SystemUIAppComponentFactoryBase$instantiateProviderCompat$1.onContextAvailable(SystemUIAppComponentFactoryBase.kt:103)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at com.android.systemui.keyguard.CustomizationProvider.attachInfo(CustomizationProvider.kt:87)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.app.ActivityThread.installProvider(ActivityThread.java:8179)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7694)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7383)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2379)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.os.Looper.loop(Looper.java:317)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at android.app.ActivityThread.main(ActivityThread.java:8592)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at java.lang.reflect.Method.invoke(Native Method)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-23 19:17:20.709  5882  5882 W AppComponentFactory: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:878)
+11-23 19:17:20.713  5882  5901 V WindowManagerShell: 	DefaultTransitionHandler init took 9ms
+11-23 19:17:20.714  5882  5901 V WindowManagerShell: Adding external interface from Transitions with key extra_shell_shell_transitions
+
+//////////////////////////
+
+
+
+
