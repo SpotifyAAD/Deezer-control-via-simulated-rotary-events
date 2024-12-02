@@ -1,0 +1,7 @@
+in this path :
+/media/iti/468469bc-700b-47e2-ad57-0efb9731e806/android-14.0.0_r67/device/brcm/rpi4/boot/config.txt
+
+we added this :
+gpio=27=pu
+
+to make the button work , the gpio config of this pin must be pull up 
